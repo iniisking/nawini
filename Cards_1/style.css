@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  display: flex;
+  border: 1px solid #c8c8c8;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+.child:hover {
+  border-color: #0073e6;
+}
+.child:hover .icon {
+  color: #0073e6;
+}
+.icon {
+  font-size: 60px;
+  padding: 0px 20px;
+}
+.text {
+  font-family: "Comfortaa";
+}
+.card-head {
+  padding: 5px 10px;
+  width: fit-content;
+  background-color: #004d99;
+  color: white;
+  font-family: "raleway";
+  font-size: large;
+}
+
+@media screen and (max-width: 770px) {
+  .parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
